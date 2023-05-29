@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: linear-gradient(to right, rgb(210, 0, 218), rgba(45, 84, 194, 0.8)), url(img/IMG_3436.PNG);
+    font-family: "Fira sans", sans-serif;
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+}
+nav {
+    width: 100%;
+    height: 80px;
+    display:flex;
+    justify-content:space-between;
+    padding: 35px 5%;
+}
+nav .logo{
+    font-size: 30px;
+    font-weight: 700;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+nav ul li{
+    padding: 8px 15px;
+    border-radius: 10px;
+    transition: 0.2s ease-in;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+button{
+    padding: 2px 20px;
+    border-radius: 10px;
+    color: blue;
+    font-size: 16px;
+    border-style: none;
+    font-weight: 700;
+    margin-left: 10px;
+}
+nav ul li:hover{
+    background-color:rgba(59, 15, 218, 0.8) ;
+}
+nav .menubtn{
+    font-size: 30px;
+    font-weight: bolder;
+    cursor:pointer;
+    display: none;
+}
+
+/* responsive navbar css */
+@media screen and (max-width: 600px) {
+    .menubtn{
+        display: flex;
+    }
+    nav .navLinks{
+        display: none;
+    }
+}
+    
+.sideNav{
+    height: 100px;
+    position: fixed;
+    top: 0;
+    right: 0%;
+    background-color: rgb(44, 1, 197);
+    overflow-x: hidden;
+    transition: 0.3 ease-in;
+    padding-top: 60px;
+}
+
+.sideNav a{
+    padding: 8px ;
+}
